@@ -1,0 +1,48 @@
+package com.example.myupperlowercase;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import java.util.Locale;
+public class MainActivity extends AppCompatActivity {
+    EditText input,output;
+    Button btn;
+    RadioGroup rg;
+    String inpstr, outstr, sub;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        input=(EditText)findViewById(R.id.input);
+        output=(EditText)findViewById(R.id.output);
+        rg=(RadioGroup)findViewById(R.id.rg);
+        btn=(Button)findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int id=rg.getCheckedRadioButtonId();
+                switch (id){
+                    case R.id.r1:inpstr=input.getText().toString();
+                        outstr=inpstr.toUpperCase();
+
+                        output.setText(outstr);
+                        break;
+                    case R.id.r2:inpstr=input.getText().toString();
+                        outstr=inpstr.toLowerCase();
+                        output.setText(outstr);
+                        break;
+                    case R.id.r3:inpstr=input.getText().toString();
+                        sub=inpstr.substring(inpstr.length()-5,inpstr.length());
+                        output.setText(sub);
+                        break;
+                    case R.id.r4:inpstr=input.getText().toString();
+                        sub="";
+                        sub=inpstr.substring(0,5);
+                        break;
+                }
+            }
+        });
+    }
+}

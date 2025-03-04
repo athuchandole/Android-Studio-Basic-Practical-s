@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableRow>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Massage" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concatinate display here" />
+
+    </TableRow>
+    <TableRow>
+        <RadioButton
+            android:id="@+id/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Font"/>
+    </TableRow>
+    <TableRow>
+        <RadioButton
+            android:id="@+id/style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Style"/>
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bold"/>
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Italic"/>
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/underline"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Underline"/>
+    </TableRow>
+    <TableRow>
+        <RadioButton
+            android:id="@+id/color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Color"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit" />
+    </TableRow>
+</TableLayout>
